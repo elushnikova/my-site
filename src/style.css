@@ -70,7 +70,7 @@ a {
 
   border-radius: 1.5rem;
   background-color: #f1f8fd;
-  color: #179cde;
+  color: #3d3d3d;
 
   transition-property: color, background-color;
   transition-duration: 0.3s;
@@ -113,7 +113,7 @@ a {
   font-size: 1rem;
   border: none;
   background-color: transparent;
-  color: #a9c9dd;
+  color: #127bab;
   transition-property: color, text-decoration;
   transition-duration: 0.3s;
 }
