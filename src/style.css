@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Amatic";
+  src: url("fonts/AmaticSC-Bold.ttf");
+}
+
+html {
+  background-color: #fdfdfd;
+}
+
+body {
+  display: flex;
+  height: 90vh;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+  height: 300px;
+  width: 240px;
+  padding: 1rem;
+
+  text-align: center;
+  color: #3d3d3d;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  margin: auto 0 0.25rem;
+  font-family: "Amatic", sans-serif;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 3rem;
+  padding: 0 1.5rem 0 0.5rem;
+
+  border-radius: 1.5rem;
+  background-color: #f1f8fd;
+  color: #179cde;
+
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #179cde;
+  color: #f1f8fd;
+  outline: none;
+}
+
+.btn:active {
+  opacity: 0.9;
+}
+
+svg {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+.tg-plane {
+  fill: #f1f8fd;
+}
+.tg-fold-inner {
+  fill: #c8daea;
+}
+.tg-fold-outer {
+  fill: #a9c9dd;
+}
+.tg-blue {
+  fill: #179cde;
+}
+
+.toggle {
+  cursor: pointer;
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  color: #a9c9dd;
+  transition-property: color, text-decoration;
+  transition-duration: 0.3s;
+}
+
+.toggle:hover,
+.toggle:focus {
+  color: #179cde;
+  text-decoration: underline;
+  outline: none;
+}
+
+.toggle:active {
+  color: #a9c9dd;
+}
