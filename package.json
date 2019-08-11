@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "version": "0.1.0",
+  "name": "elushnikova.dev",
+  "description": "Personal page",
+  "author": "Elena Lushnikova",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/elushnikova/elushnikova.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/elushnikova/elushnikova/issues"
+  },
+  "homepage": "https://elushnikova.dev",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
