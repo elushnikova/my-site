@@ -1,6 +1,7 @@
-const { watch, parallel, src, dest } = require("gulp");
+const { parallel, src, dest } = require("gulp");
 const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require("gulp-clean-css");
+const uglify = require("gulp-uglify");
 
 const srcPath = "src/";
 const destPath = "dist/";
@@ -23,9 +24,15 @@ function minifyCss() {
     .pipe(dest(destPath));
 }
 
+function minifyJs() {
+  return src(`${srcPath}/scripts/*.js`)
+    .pipe(uglify())
+    .pipe(dest(`${destPath}/scripts/`));
+}
+
 function copyFonts() {
   return src(`${srcPath}/fonts/*.ttf`)
     .pipe(dest(`${destPath}/fonts/`));
 }
 
-exports.build = parallel(minifyHtml, minifyRuHtml, minifyCss, copyFonts);
+exports.build = parallel(minifyHtml, minifyRuHtml, minifyCss, minifyJs, copyFonts);
