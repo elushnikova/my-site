@@ -31,7 +31,7 @@ function minifyJs() {
 }
 
 function copyFonts() {
-  return src(`${srcPath}/fonts/*.ttf`)
+  return src(`${srcPath}/fonts/*.woff`)
     .pipe(dest(`${destPath}/fonts/`));
 }
 

@@ -1,11 +1,13 @@
 @font-face {
   font-family: "Roboto";
-  src: url("fonts/Roboto-Regular.ttf");
+  font-display: swap;
+  src: url("fonts/Roboto-Regular.woff");
 }
 
 @font-face {
   font-family: "Amatic";
-  src: url("fonts/AmaticSC-Bold.ttf");
+  font-display: swap;
+  src: url("fonts/AmaticSC-Bold.woff");
 }
 
 html {
