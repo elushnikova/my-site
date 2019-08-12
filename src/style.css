@@ -24,8 +24,6 @@ main {
   align-items: center;
 
   box-sizing: border-box;
-  height: 300px;
-  width: 240px;
   padding: 1rem;
 
   text-align: center;
@@ -103,7 +101,6 @@ a {
 
 .toggle {
   cursor: pointer;
-  margin-top: auto;
   padding: 0.5rem 1rem;
   font-size: 1rem;
   border: none;
@@ -111,6 +108,8 @@ a {
   color: #127bab;
   transition-property: color, text-decoration;
   transition-duration: 0.3s;
+  position: fixed;
+  bottom: 0.5rem;
 }
 
 .toggle:hover,
