@@ -35,4 +35,9 @@ function copyFonts() {
     .pipe(dest(`${destPath}/fonts/`));
 }
 
-exports.build = parallel(minifyHtml, minifyRuHtml, minifyCss, minifyJs, copyFonts);
+function copyImages() {
+  return src(`${srcPath}/images/*`)
+    .pipe(dest(`${destPath}/images/`))
+}
+
+exports.build = parallel(minifyHtml, minifyRuHtml, minifyCss, minifyJs, copyFonts, copyImages);
