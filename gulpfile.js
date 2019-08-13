@@ -37,7 +37,7 @@ function copyFonts() {
 }
 
 function copyImages() {
-  return src(`${srcPath}/images/*`)
+  return src(`${srcPath}/images/*.svg`)
     .pipe(dest(`${destPath}/images/`))
 }
 
