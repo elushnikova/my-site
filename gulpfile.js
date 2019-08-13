@@ -1,10 +1,11 @@
-const { parallel, src, dest } = require("gulp");
+const { series, parallel, src, dest } = require("gulp");
 const htmlmin = require('gulp-htmlmin');
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify");
+const del = require("del");
 
-const srcPath = "src/";
-const destPath = "dist/";
+const srcPath = "src";
+const destPath = "dist";
 
 function minifyHtml() {
   return src(`${srcPath}/*.html`)
@@ -40,4 +41,18 @@ function copyImages() {
     .pipe(dest(`${destPath}/images/`))
 }
 
-exports.build = parallel(minifyHtml, minifyRuHtml, minifyCss, minifyJs, copyFonts, copyImages);
+function clean() {
+  return del(`${destPath}/*`)
+}
+
+exports.build = series(
+  clean,
+  parallel(
+    minifyHtml,
+    minifyRuHtml,
+    minifyCss,
+    minifyJs,
+    copyFonts,
+    copyImages
+  )
+);
