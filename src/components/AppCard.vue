@@ -1,5 +1,5 @@
 <template>
-  <article lang="ru">
+  <article>
     <header>
       <h2>{{ item.name }}</h2>
       <p>{{ item.desc }}</p>

@@ -20,24 +20,28 @@ export default Vue.extend({
       projects: [
         {
           slug: 'lig-kz',
-          name: 'LIG',
-          desc: 'Доставка домашней еды в Алматы, Казахстан.',
-          links: [{ name: 'сайт', url: 'https://lig.kz/' }],
+          name: this.$t('project.lig.name'),
+          desc: this.$t('project.lig.desc'),
+          links: [
+            { name: this.$t('link.site'), url: 'https://lig.kz/' },
+          ],
         },
         {
           slug: 'smarter-uz',
-          name: 'Smarter',
-          desc: 'Сервис скидок в Ташкенте, Узбекистан.',
+          name: this.$t('project.smarter.name'),
+          desc: this.$t('project.smarter.desc'),
           links: [
-            { name: 'лендинг', url: 'https://how.smarter.uz/' },
-            { name: 'сайт', url: 'https://smarter.uz/' },
+            { name: this.$t('link.landing'), url: 'https://how.smarter.uz/' },
+            { name: this.$t('link.site'), url: 'https://smarter.uz/' },
           ],
         },
         {
           slug: 'aqua-angels',
-          name: 'Aqua Angels',
-          desc: 'Доставка премиальной воды из Исландии.',
-          links: [{ name: 'сайт', url: 'https://aqua-angels.com/' }],
+          name: this.$t('project.aqua.name'),
+          desc: this.$t('project.aqua.desc'),
+          links: [
+            { name: this.$t('link.site'), url: 'https://aqua-angels.com/' },
+          ],
         },
       ],
     };

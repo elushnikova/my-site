@@ -19,11 +19,19 @@ export default Vue.extend({
     return {
       myCard: {
         slug: 'my-card',
-        name: 'Елена Лушникова',
-        desc: 'фронтенд-разработчик',
+        name: this.$t('my.name'),
+        desc: this.$t('my.desc'),
         links: [
-          { title: 'Примеры кода', name: 'github.com/elushnikova', url: 'https://github.com/elushnikova' },
-          { title: 'Почта для связи', name: 'hello@elushnikova.dev', url: 'mailto:hello@elushnikova.dev' },
+          {
+            title: this.$t('my.github'),
+            name: 'github.com/elushnikova',
+            url: 'https://github.com/elushnikova',
+          },
+          {
+            title: this.$t('my.email'),
+            name: 'hello@elushnikova.dev',
+            url: 'mailto:hello@elushnikova.dev',
+          },
         ],
       },
     };

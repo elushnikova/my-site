@@ -20,34 +20,41 @@ export default Vue.extend({
       samples: [
         {
           slug: 'my-card',
-          name: 'Визитка',
-          desc: 'Карточка с ссылкой на Гитхаб и почтой для связи.',
+          name: this.$t('sample.card.name'),
+          desc: this.$t('sample.card.desc'),
           links: [
-            { name: 'демо', url: 'https://elushnikova-card.netlify.app/demo' },
+            {
+              name: this.$t('link.demo'),
+              url: 'https://elushnikova-card.netlify.app/demo',
+            },
           ],
         },
         {
           slug: 'weather-widget',
-          name: 'Виджет погоды',
-          desc:
-            'Показывает погоду в заданных местах или по геолокации устройства.',
+          name: this.$t('sample.weather.name'),
+          desc: this.$t('sample.weather.desc'),
           links: [
-            { name: 'демо', url: 'https://owm-widget.netlify.app/demo' },
             {
-              name: 'исходный код',
+              name: this.$t('link.demo'),
+              url: 'https://owm-widget.netlify.app/demo',
+            },
+            {
+              name: this.$t('link.source'),
               url: 'https://gitlab.com/elushnikova/weather-widget',
             },
           ],
         },
         {
           slug: 'hour-rules',
-          name: 'Правила по часам',
-          desc:
-            'Попытка структурировать дневную жизнь на карантине (продлилась недолго).',
+          name: this.$t('sample.hours.name'),
+          desc: this.$t('sample.hours.desc'),
           links: [
-            { name: 'демо', url: 'https://hour-rules.netlify.app/' },
             {
-              name: 'исходный код',
+              name: this.$t('link.demo'),
+              url: 'https://hour-rules.netlify.app/',
+            },
+            {
+              name: this.$t('link.source'),
               url: 'https://github.com/elushnikova/hour-rules',
             },
           ],
