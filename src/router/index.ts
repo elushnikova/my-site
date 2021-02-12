@@ -1,9 +1,8 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import i18n from '@/i18n';
-import HomeView from '@/views/HomeView.vue';
-import SamplesView from '@/views/SamplesView.vue';
-import ProjectsView from '@/views/ProjectsView.vue';
+import load from '@/router/load';
+import AppView from '@/assets/AppView';
 
 Vue.use(VueRouter);
 
@@ -11,17 +10,17 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: i18n.t('view.home') as string,
-    component: HomeView,
+    component: load(AppView.Home),
   },
   {
     path: '/samples',
     name: i18n.t('view.samples') as string,
-    component: SamplesView,
+    component: load(AppView.Samples),
   },
   {
     path: '/projects',
     name: i18n.t('view.projects') as string,
-    component: ProjectsView,
+    component: load(AppView.Projects),
   },
 ];
 

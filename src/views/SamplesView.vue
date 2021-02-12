@@ -6,10 +6,11 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import AppView from '@/assets/AppView';
 import AppCard from '@/components/AppCard.vue';
 
 export default Vue.extend({
-  name: 'SamplesView',
+  name: AppView.Projects,
 
   components: {
     AppCard,
