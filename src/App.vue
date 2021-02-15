@@ -1,7 +1,7 @@
 <template>
   <div id="app" :lang="$i18n.locale">
     <app-nav />
-    <router-view />
+    <router-view :key="$i18n.locale" />
   </div>
 </template>
 

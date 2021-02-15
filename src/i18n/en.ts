@@ -8,6 +8,10 @@ const en: LocaleType = {
       name: AppLocaleName.English,
       code: AppLocale.English,
     },
+    next: {
+      name: AppLocaleName.Russian,
+      code: AppLocale.Russian,
+    },
   },
   view: {
     home: 'Home',

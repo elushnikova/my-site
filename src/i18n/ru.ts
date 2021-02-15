@@ -7,6 +7,10 @@ const ru = {
       name: AppLocaleName.Russian,
       code: AppLocale.Russian,
     },
+    next: {
+      name: AppLocaleName.English,
+      code: AppLocale.English,
+    },
   },
   view: {
     home: 'Главная',

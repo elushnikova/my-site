@@ -6,6 +6,12 @@
           {{ $t(`view.${route.name}`) }}
         </router-link>
       </li>
+
+      <li class="ml-auto">
+        <button @click="$i18n.locale = $t('locale.next.code')">
+          {{ $t('locale.next.name') }}
+        </button>
+      </li>
     </ul>
   </nav>
 </template>
@@ -37,5 +43,9 @@ export default Vue.extend({
   li:not(:last-child) {
     margin-right: 8px;
   }
+}
+
+.ml-auto {
+  margin-left: auto;
 }
 </style>
