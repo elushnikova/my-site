@@ -8,7 +8,7 @@
       </li>
 
       <li class="ml-auto">
-        <button @click="$i18n.locale = $t('locale.next.code')">
+        <button @click="toggleLocale()">
           {{ $t('locale.next.name') }}
         </button>
       </li>
@@ -18,7 +18,9 @@
 
 <script lang="ts">
 import Vue from 'vue';
+import { Location } from 'vue-router';
 import { views } from '@/router';
+import AppLocale from '@/assets/AppLocale';
 
 export default Vue.extend({
   name: 'AppNav',
@@ -27,6 +29,19 @@ export default Vue.extend({
     return {
       views,
     };
+  },
+
+  methods: {
+    toggleLocale() {
+      const nextLocale = this.$t('locale.next.code') as AppLocale;
+      const nextLocation: Location = {
+        name: this.$route.name as string,
+        params: { locale: nextLocale },
+      };
+
+      this.$i18n.locale = nextLocale;
+      this.$router.push(nextLocation);
+    },
   },
 });
 </script>
