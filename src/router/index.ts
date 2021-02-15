@@ -1,26 +1,37 @@
 import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
-import i18n from '@/i18n';
+import beforeEnter from '@/router/beforeEnter';
 import load from '@/router/load';
 import AppView from '@/assets/AppView';
 
 Vue.use(VueRouter);
 
-const routes: Array<RouteConfig> = [
+const views: Array<RouteConfig> = [
   {
-    path: '/',
-    name: i18n.t('view.home') as string,
+    path: '',
+    name: 'home',
     component: load(AppView.Home),
   },
   {
-    path: '/samples',
-    name: i18n.t('view.samples') as string,
+    path: 'samples',
+    name: 'samples',
     component: load(AppView.Samples),
   },
   {
-    path: '/projects',
-    name: i18n.t('view.projects') as string,
+    path: 'projects',
+    name: 'projects',
     component: load(AppView.Projects),
+  },
+];
+
+const routes: Array<RouteConfig> = [
+  {
+    path: '/:locale',
+    component: {
+      render: (h) => h('router-view'),
+    },
+    beforeEnter,
+    children: views,
   },
 ];
 
@@ -31,4 +42,4 @@ const router = new VueRouter({
 });
 
 export default router;
-export { routes };
+export { views };

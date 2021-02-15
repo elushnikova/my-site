@@ -1,25 +1,25 @@
 <template>
   <nav class="app-nav">
-      <ul>
-        <li v-for="route in routes" :key="route.path">
-          <router-link :to="route.path">
-            {{ route.name }}
-          </router-link>
-        </li>
-      </ul>
-    </nav>
+    <ul>
+      <li v-for="route in views" :key="route.path">
+        <router-link :to="{ name: route.name, params: { locale: $i18n.locale } }">
+          {{ $t(`view.${route.name}`) }}
+        </router-link>
+      </li>
+    </ul>
+  </nav>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import { routes } from '@/router';
+import { views } from '@/router';
 
 export default Vue.extend({
   name: 'AppNav',
 
   data() {
     return {
-      routes,
+      views,
     };
   },
 });
