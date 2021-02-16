@@ -23,13 +23,13 @@ export default Vue.extend({
     return {
       samples: [
         {
-          slug: 'my-card',
-          name: this.$t('sample.card.name'),
-          desc: this.$t('sample.card.desc'),
+          slug: 'my-site',
+          name: this.$t('sample.site.name'),
+          desc: this.$t('sample.site.desc'),
           links: [
             {
-              name: this.$t('link.demo'),
-              url: 'https://elushnikova-card.netlify.app/demo',
+              name: this.$t('link.source'),
+              url: 'https://gitlab.com/elushnikova/elushnikova',
             },
           ],
         },

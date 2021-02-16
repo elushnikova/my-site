@@ -31,9 +31,9 @@ const en: LocaleType = {
     landing: 'landing',
   },
   sample: {
-    card: {
-      name: 'Personal card',
-      desc: 'Small card with a link to GitHub and contact email',
+    site: {
+      name: 'This site',
+      desc: 'Short list of my works, plus contact email',
     },
     weather: {
       name: 'Weather widget',
