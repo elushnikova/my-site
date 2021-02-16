@@ -30,5 +30,9 @@ export default Vue.extend({
 
 .c-nav-list--column {
   flex-direction: column;
+
+  li {
+    margin-bottom: 0.1em;
+  }
 }
 </style>

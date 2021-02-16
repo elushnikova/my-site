@@ -4,7 +4,7 @@
       <nav-list>
         <nav-list-item v-for="view in views" :key="view.path">
           <page-header-item>
-            <base-router-link :route="view" />
+            <base-link-router :route="view" />
           </page-header-item>
         </nav-list-item>
       </nav-list>
@@ -25,7 +25,7 @@ import PageHeaderItemButtonLocale from '@/components/PageHeaderItemButtonLocale.
 import PageHeaderItem from '@/components/PageHeaderItem.vue';
 import NavList from '@/components/NavList.vue';
 import NavListItem from '@/components/NavListItem.vue';
-import BaseRouterLink from '@/components/BaseRouterLink.vue';
+import BaseLinkRouter from '@/components/BaseLinkRouter.vue';
 
 export default Vue.extend({
   name: 'PageHeader',
@@ -35,7 +35,7 @@ export default Vue.extend({
     PageHeaderItem,
     NavList,
     NavListItem,
-    BaseRouterLink,
+    BaseLinkRouter,
   },
 
   data() {

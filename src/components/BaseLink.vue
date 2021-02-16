@@ -36,3 +36,48 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style lang="scss">
+@use "@/assets/styles/_colors";
+
+.c-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: colors.$link;
+  transition: color 300ms;
+
+  &:hover,
+  &:visited {
+    color: colors.$linkDarken1;
+  }
+
+  &:visited:hover {
+    color: colors.$linkDarken2;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: inline-block;
+    width: 0;
+    height: 1px;
+    color: inherit;
+    border-bottom: 1px solid;
+    transition: width 300ms;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+</style>

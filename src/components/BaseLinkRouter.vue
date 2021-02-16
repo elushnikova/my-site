@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="target">
+  <router-link :to="target" class="c-link c-link--router">
     {{ text }}
   </router-link>
 </template>
@@ -10,14 +10,14 @@ import { Location } from 'vue-router';
 import { TranslateResult } from 'vue-i18n';
 
 export default Vue.extend({
-  name: 'BaseRouterLink',
+  name: 'BaseLinkRouter',
 
   props: {
     route: {
       type: Object,
       required: true,
       validator(value) {
-        const hasName = typeof (value.name) === 'string';
+        const hasName = typeof value.name === 'string';
         return hasName;
       },
     },
@@ -42,7 +42,22 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-a:not(.router-link-exact-active) {
-  text-decoration: none;
+@use "@/assets/styles/_colors";
+
+.c-link--router.router-link-exact-active {
+  &,
+  &:visited,
+  &:hover,
+  &:focus {
+    color: colors.$accent;
+  }
+
+  &:visited:hover {
+    color: colors.$accentLighten;
+  }
+
+  &::after {
+    width: 100%;
+  }
 }
 </style>
