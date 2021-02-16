@@ -33,11 +33,11 @@ const en: LocaleType = {
   sample: {
     card: {
       name: 'Personal card',
-      desc: 'Small card with a link to GitHub and contact email.',
+      desc: 'Small card with a link to GitHub and contact email',
     },
     weather: {
       name: 'Weather widget',
-      desc: 'Displays weather for given places or current device geolocation.',
+      desc: 'Displays weather for given places or current device geolocation',
     },
     hours: {
       name: 'Hour rules',
@@ -47,15 +47,15 @@ const en: LocaleType = {
   project: {
     lig: {
       name: 'LIG',
-      desc: 'Home meals delivery in Almaty, Kazakhstan.',
+      desc: 'Home meals delivery in Almaty, Kazakhstan',
     },
     smarter: {
       name: 'Smarter',
-      desc: 'Discount service in Tashkent, Uzbekistan.',
+      desc: 'Discount service in Tashkent, Uzbekistan',
     },
     aqua: {
       name: 'Aqua Angels',
-      desc: 'Premium water delivery from Iceland.',
+      desc: 'Premium water delivery from Iceland',
     },
   },
 };
