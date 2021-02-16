@@ -1,19 +1,22 @@
 <template>
-  <div>
-    <app-card v-for="project in projects" :key="project.slug" :item="project" />
-  </div>
+  <base-wrapper>
+    <content-card v-for="project in projects" :key="project.slug" :item="project" />
+  </base-wrapper>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import AppView from '@/assets/AppView';
-import AppCard from '@/components/AppCard.vue';
+
+import BaseWrapper from '@/components/BaseWrapper.vue';
+import ContentCard from '@/components/ContentCard.vue';
 
 export default Vue.extend({
   name: AppView.Projects,
 
   components: {
-    AppCard,
+    BaseWrapper,
+    ContentCard,
   },
 
   data() {

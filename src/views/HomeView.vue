@@ -1,19 +1,22 @@
 <template>
-  <div>
-    <app-card :item="myCard" />
-  </div>
+  <base-wrapper>
+    <content-card :item="myCard" wrap-links />
+  </base-wrapper>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
 import AppView from '@/assets/AppView';
-import AppCard from '@/components/AppCard.vue';
+
+import BaseWrapper from '@/components/BaseWrapper.vue';
+import ContentCard from '@/components/ContentCard.vue';
 
 export default Vue.extend({
   name: AppView.Home,
 
   components: {
-    AppCard,
+    BaseWrapper,
+    ContentCard,
   },
 
   data() {
