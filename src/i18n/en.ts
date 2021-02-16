@@ -20,7 +20,7 @@ const en: LocaleType = {
   },
   my: {
     name: 'Elena Lushnikova',
-    desc: 'frontend developer',
+    desc: 'Frontend developer',
     github: 'Code samples',
     email: 'Contact email',
   },
