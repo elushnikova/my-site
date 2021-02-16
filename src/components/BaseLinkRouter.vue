@@ -57,6 +57,11 @@ export default Vue.extend({
   }
 
   &::after {
+    width: 0;
+  }
+
+  &:hover::after,
+  &:focus::after {
     width: 100%;
   }
 }
