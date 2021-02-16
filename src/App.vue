@@ -28,6 +28,7 @@ export default Vue.extend({
 
 .app {
   @include mixins.maxWidth;
+  position: relative;
   margin: 0 auto;
 
   font-family: "Consolas", "Courier New", monospace;
