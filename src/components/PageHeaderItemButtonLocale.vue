@@ -1,7 +1,10 @@
 <template>
-  <button class="c-header__button c-header__button--locale" @click="toggle()">
+  <base-button
+    class="c-header__button c-header__button--locale"
+    @click="toggle()"
+  >
     {{ $t("locale.next.name") }}
-  </button>
+  </base-button>
 </template>
 
 <script lang="ts">
@@ -10,8 +13,14 @@ import { Location } from 'vue-router';
 
 import AppLocale from '@/assets/AppLocale';
 
+import BaseButton from '@/components/BaseButton.vue';
+
 export default Vue.extend({
   name: 'PageHeaderItemButtonLocale',
+
+  components: {
+    BaseButton,
+  },
 
   methods: {
     toggle(): void {
