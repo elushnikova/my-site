@@ -29,7 +29,7 @@ export default Vue.extend({
           links: [
             {
               name: this.$t('link.source'),
-              url: 'https://gitlab.com/elushnikova/elushnikova',
+              url: 'https://github.com/elushnikova/my-site',
             },
           ],
         },
@@ -44,7 +44,7 @@ export default Vue.extend({
             },
             {
               name: this.$t('link.source'),
-              url: 'https://gitlab.com/elushnikova/weather-widget',
+              url: 'https://github.com/elushnikova/weather-widget',
             },
           ],
         },
