@@ -15,7 +15,7 @@ export default Vue.extend({
 <style lang="scss">
 .base-enter-active,
 .base-leave-active {
-  transition: opacity 100ms;
+  transition: opacity 200ms;
 }
 
 .base-enter,
