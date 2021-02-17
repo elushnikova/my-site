@@ -1,0 +1,10 @@
+$gap: 10px;
+$maxWidth: 320px;
+
+@mixin padding {
+  padding: $gap;
+}
+
+@mixin maxWidth {
+  max-width: $maxWidth;
+}
