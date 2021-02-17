@@ -31,7 +31,7 @@ export default Vue.extend({
   position: relative;
   margin: 0 auto;
 
-  font-family: "Consolas", "Courier New", monospace;
+  font-family: "Ubuntu Mono", "Consolas", monospace;
   font-size: 16px;
 
   button {

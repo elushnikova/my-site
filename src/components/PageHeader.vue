@@ -57,7 +57,7 @@ export default Vue.extend({
   @include mixins.padding;
   position: relative;
   height: 2em;
-  font-size: 0.8em;
+  font-size: 0.85em;
 
   nav {
     position: absolute;
