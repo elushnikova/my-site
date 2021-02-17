@@ -2,6 +2,7 @@
   <base-button
     class="c-header__button c-header__button--locale"
     @click="toggle()"
+    :lang="$t('locale.next.code')"
   >
     {{ $t("locale.next.name") }}
   </base-button>

@@ -1,5 +1,5 @@
 <template>
-  <div class="app" :lang="$i18n.locale">
+  <div class="app">
     <page-header />
     <router-view :key="$i18n.locale" />
   </div>
@@ -15,6 +15,22 @@ export default Vue.extend({
 
   components: {
     PageHeader,
+  },
+
+  metaInfo() {
+    return {
+      title: `${this.$t('my.name')}, ${(this.$t('my.desc') as string).toLowerCase()}`,
+      titleTemplate: `%s · ${this.$t('my.name')}`,
+      htmlAttrs: {
+        lang: this.$i18n.locale,
+      },
+      meta: [
+        {
+          name: 'description',
+          content: this.$t('my.intro') as string,
+        },
+      ],
+    };
   },
 });
 </script>

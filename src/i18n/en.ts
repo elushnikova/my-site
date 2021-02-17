@@ -23,6 +23,7 @@ const en: LocaleType = {
     desc: 'Frontend developer',
     github: 'Code samples',
     email: 'Contact email',
+    intro: 'Greetings. I\'m Elena, frontend developer. Working at UTC+3 time zone.',
   },
   link: {
     demo: 'demo',

@@ -19,6 +19,12 @@ export default Vue.extend({
     ContentCard,
   },
 
+  metaInfo() {
+    return {
+      title: this.$t('my.desc') as string,
+    };
+  },
+
   data() {
     return {
       myCard: {

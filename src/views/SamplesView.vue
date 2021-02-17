@@ -19,6 +19,12 @@ export default Vue.extend({
     ContentCard,
   },
 
+  metaInfo() {
+    return {
+      title: this.$t('view.samples') as string,
+    };
+  },
+
   data() {
     return {
       samples: [

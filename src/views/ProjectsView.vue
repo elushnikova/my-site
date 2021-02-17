@@ -19,6 +19,12 @@ export default Vue.extend({
     ContentCard,
   },
 
+  metaInfo() {
+    return {
+      title: this.$t('view.projects') as string,
+    };
+  },
+
   data() {
     return {
       projects: [
