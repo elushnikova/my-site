@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter, { RouteConfig } from 'vue-router';
 import beforeEnter from '@/router/beforeEnter';
 import load from '@/router/load';
+import redirect from '@/router/redirect';
 import AppView from '@/assets/AppView';
 
 Vue.use(VueRouter);
@@ -32,6 +33,10 @@ const routes: Array<RouteConfig> = [
     },
     beforeEnter,
     children: views,
+  },
+  {
+    path: '/',
+    redirect,
   },
 ];
 
