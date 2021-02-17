@@ -36,7 +36,6 @@ export default Vue.extend({
           desc: this.$t('project.smarter.desc'),
           links: [
             { name: this.$t('link.landing'), url: 'https://how.smarter.uz/' },
-            { name: this.$t('link.site'), url: 'https://smarter.uz/' },
           ],
         },
         {
