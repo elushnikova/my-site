@@ -1,6 +1,6 @@
 {
-  "name": "elushnikova",
-  "version": "0.1.0",
+  "name": "my-site",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
