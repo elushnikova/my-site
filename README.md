@@ -1,4 +1,4 @@
-# elushnikova
+# my-site
 
 ## Project setup
 ```
@@ -10,6 +10,12 @@ npm install
 npm run serve
 ```
 
+or 
+
+```
+npm run serve
+```
+
 ### Compiles and minifies for production
 ```
 npm run build
@@ -17,7 +23,7 @@ npm run build
 
 ### Run your unit tests
 ```
-npm run test:unit
+npm run test
 ```
 
 ### Lints and fixes files
