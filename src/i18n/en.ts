@@ -19,11 +19,11 @@ const en: LocaleType = {
     projects: 'Projects',
   },
   my: {
-    name: 'Elena Lushnikova',
-    desc: 'Frontend developer',
+    name: 'Lena Lushnikova',
+    desc: 'JS developer fond of HTML and CSS. Falling in love with Node.',
     github: 'Code samples',
     email: 'Contact email',
-    intro: 'Greetings. I\'m Elena, frontend developer. Working at UTC+3 time zone.',
+    intro: 'Greetings. I\'m Lena, JS developer. Working at UTC+3 time zone.',
   },
   link: {
     demo: 'demo',
