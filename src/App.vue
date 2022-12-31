@@ -19,7 +19,6 @@ export default Vue.extend({
 
   metaInfo() {
     return {
-      title: `${this.$t('my.desc')} · ${this.$t('my.name')}`,
       titleTemplate: `%s · ${this.$t('my.name')}`,
       htmlAttrs: {
         lang: this.$i18n.locale,
