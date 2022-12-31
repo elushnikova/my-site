@@ -33,6 +33,11 @@ export default Vue.extend({
         desc: this.$t('my.desc'),
         links: [
           {
+            title: this.$t('my.job.hint'),
+            name: this.$t('my.job.title'),
+            url: 'https://elbrusboot.camp/spb-js/',
+          },
+          {
             title: this.$t('my.github'),
             name: 'github.com/elushnikova',
             url: 'https://github.com/elushnikova',
