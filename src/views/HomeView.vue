@@ -33,13 +33,18 @@ export default Vue.extend({
         desc: this.$t('my.desc'),
         links: [
           {
-            title: this.$t('my.github'),
-            name: 'github.com/elushnikova',
+            title: this.$t('my.job.hint'),
+            name: this.$t('my.job.title'),
+            url: 'https://elbrusboot.camp/spb-js/',
+          },
+          {
+            title: 'github.com/elushnikova',
+            name: this.$t('my.github'),
             url: 'https://github.com/elushnikova',
           },
           {
-            title: this.$t('my.email'),
-            name: 'hello@elushnikova.dev',
+            title: 'hello@elushnikova.dev',
+            name: this.$t('my.email'),
             url: 'mailto:hello@elushnikova.dev',
           },
         ],

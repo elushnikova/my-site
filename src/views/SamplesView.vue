@@ -12,7 +12,7 @@ import BaseWrapper from '@/components/BaseWrapper.vue';
 import ContentCard from '@/components/ContentCard.vue';
 
 export default Vue.extend({
-  name: AppView.Projects,
+  name: AppView.Samples,
 
   components: {
     BaseWrapper,
@@ -28,6 +28,36 @@ export default Vue.extend({
   data() {
     return {
       samples: [
+        {
+          slug: 'timer',
+          name: this.$t('sample.timer.name'),
+          desc: this.$t('sample.timer.desc'),
+          links: [
+            {
+              name: this.$t('link.demo'),
+              url: 'https://timer.elushnikova.dev/',
+            },
+            {
+              name: this.$t('link.source'),
+              url: 'https://github.com/elushnikova/timer',
+            },
+          ],
+        },
+        {
+          slug: 'alphyn',
+          name: this.$t('sample.alphyn.name'),
+          desc: this.$t('sample.alphyn.desc'),
+          links: [
+            {
+              name: this.$t('link.demo'),
+              url: 'https://alphyn.team/',
+            },
+            {
+              name: this.$t('link.source'),
+              url: 'https://github.com/elushnikova/alphyn',
+            },
+          ],
+        },
         {
           slug: 'my-site',
           name: this.$t('sample.site.name'),
@@ -46,7 +76,7 @@ export default Vue.extend({
           links: [
             {
               name: this.$t('link.demo'),
-              url: 'https://owm-widget.netlify.app/demo',
+              url: 'https://weather.elushnikova.dev/demo',
             },
             {
               name: this.$t('link.source'),
@@ -61,7 +91,7 @@ export default Vue.extend({
           links: [
             {
               name: this.$t('link.demo'),
-              url: 'https://hour-rules.netlify.app/',
+              url: 'https://hours.elushnikova.dev/',
             },
             {
               name: this.$t('link.source'),

@@ -19,11 +19,15 @@ const en: LocaleType = {
     projects: 'Projects',
   },
   my: {
-    name: 'Elena Lushnikova',
-    desc: 'Frontend developer',
-    github: 'Code samples',
-    email: 'Contact email',
-    intro: 'Greetings. I\'m Elena, frontend developer. Working at UTC+3 time zone.',
+    name: 'Lena Lushnikova',
+    desc: 'JS developer fond of HTML and CSS. Falling in love with Node.',
+    github: 'Publishing code at GitHub.',
+    email: 'Reading your emails here.',
+    job: {
+      hint: 'Working with the best',
+      title: 'Mentoring at Elbrus Bootcamp.',
+    },
+    intro: 'Greetings. I\'m Lena, JS developer. Working at UTC+3 time zone.',
   },
   link: {
     demo: 'demo',
@@ -32,31 +36,25 @@ const en: LocaleType = {
     landing: 'landing',
   },
   sample: {
+    timer: {
+      name: 'Timer · 2022',
+      desc: 'Countdown timer for lecture breaks',
+    },
+    alphyn: {
+      name: 'Alphyn · 2022',
+      desc: 'Resume for HMB female team "Alphyn" (sport tournaments, wins)',
+    },
     site: {
-      name: 'This site',
+      name: 'This site · 2021',
       desc: 'Short list of my works, plus contact email',
     },
     weather: {
-      name: 'Weather widget',
+      name: 'Weather widget · 2021',
       desc: 'Displays weather for given places or current device geolocation',
     },
     hours: {
-      name: 'Hour rules',
+      name: 'Hour rules · 2020',
       desc: 'An attempt to structure daily life during lockdown (didn\'t last long)',
-    },
-  },
-  project: {
-    lig: {
-      name: 'LIG',
-      desc: 'Home meals delivery in Almaty, Kazakhstan',
-    },
-    smarter: {
-      name: 'Smarter',
-      desc: 'Discount service in Tashkent, Uzbekistan',
-    },
-    aqua: {
-      name: 'Aqua Angels',
-      desc: 'Premium water delivery from Iceland',
     },
   },
 };
