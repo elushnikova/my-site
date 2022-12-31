@@ -38,13 +38,13 @@ export default Vue.extend({
             url: 'https://elbrusboot.camp/spb-js/',
           },
           {
-            title: this.$t('my.github'),
-            name: 'github.com/elushnikova',
+            title: 'github.com/elushnikova',
+            name: this.$t('my.github'),
             url: 'https://github.com/elushnikova',
           },
           {
-            title: this.$t('my.email'),
-            name: 'hello@elushnikova.dev',
+            title: 'hello@elushnikova.dev',
+            name: this.$t('my.email'),
             url: 'mailto:hello@elushnikova.dev',
           },
         ],
