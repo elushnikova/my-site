@@ -53,20 +53,6 @@ const en: LocaleType = {
       desc: 'An attempt to structure daily life during lockdown (didn\'t last long)',
     },
   },
-  project: {
-    lig: {
-      name: 'LIG',
-      desc: 'Home meals delivery in Almaty, Kazakhstan',
-    },
-    smarter: {
-      name: 'Smarter',
-      desc: 'Discount service in Tashkent, Uzbekistan',
-    },
-    aqua: {
-      name: 'Aqua Angels',
-      desc: 'Premium water delivery from Iceland',
-    },
-  },
 };
 
 export default en;

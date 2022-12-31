@@ -12,7 +12,7 @@ import BaseWrapper from '@/components/BaseWrapper.vue';
 import ContentCard from '@/components/ContentCard.vue';
 
 export default Vue.extend({
-  name: AppView.Projects,
+  name: AppView.Samples,
 
   components: {
     BaseWrapper,

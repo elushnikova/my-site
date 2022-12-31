@@ -18,11 +18,6 @@ const views: Array<RouteConfig> = [
     name: 'samples',
     component: load(AppView.Samples),
   },
-  {
-    path: 'projects',
-    name: 'projects',
-    component: load(AppView.Projects),
-  },
 ];
 
 const routes: Array<RouteConfig> = [
