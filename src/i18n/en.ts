@@ -33,23 +33,23 @@ const en: LocaleType = {
   },
   sample: {
     timer: {
-      name: 'Timer',
+      name: 'Timer · 2022',
       desc: 'Countdown timer for lecture breaks',
     },
     alphyn: {
-      name: 'Alphyn',
+      name: 'Alphyn · 2022',
       desc: 'Resume for HMB female team "Alphyn" (sport tournaments, wins)',
     },
     site: {
-      name: 'This site',
+      name: 'This site · 2021',
       desc: 'Short list of my works, plus contact email',
     },
     weather: {
-      name: 'Weather widget',
+      name: 'Weather widget · 2021',
       desc: 'Displays weather for given places or current device geolocation',
     },
     hours: {
-      name: 'Hour rules',
+      name: 'Hour rules · 2020',
       desc: 'An attempt to structure daily life during lockdown (didn\'t last long)',
     },
   },
