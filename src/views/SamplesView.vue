@@ -29,6 +29,36 @@ export default Vue.extend({
     return {
       samples: [
         {
+          slug: 'timer',
+          name: this.$t('sample.timer.name'),
+          desc: this.$t('sample.timer.desc'),
+          links: [
+            {
+              name: this.$t('link.demo'),
+              url: 'https://timer.elushnikova.dev/',
+            },
+            {
+              name: this.$t('link.source'),
+              url: 'https://github.com/elushnikova/timer',
+            },
+          ],
+        },
+        {
+          slug: 'alphyn',
+          name: this.$t('sample.alphyn.name'),
+          desc: this.$t('sample.alphyn.desc'),
+          links: [
+            {
+              name: this.$t('link.demo'),
+              url: 'https://alphyn.team/',
+            },
+            {
+              name: this.$t('link.source'),
+              url: 'https://github.com/elushnikova/alphyn',
+            },
+          ],
+        },
+        {
           slug: 'my-site',
           name: this.$t('sample.site.name'),
           desc: this.$t('sample.site.desc'),

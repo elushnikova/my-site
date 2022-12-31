@@ -32,6 +32,14 @@ const en: LocaleType = {
     landing: 'landing',
   },
   sample: {
+    timer: {
+      name: 'Timer',
+      desc: 'Countdown timer for lecture breaks',
+    },
+    alphyn: {
+      name: 'Alphyn',
+      desc: 'Resume for HMB female team "Alphyn" (sport tournaments, wins)',
+    },
     site: {
       name: 'This site',
       desc: 'Short list of my works, plus contact email',
