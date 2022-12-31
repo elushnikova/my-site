@@ -76,7 +76,7 @@ export default Vue.extend({
           links: [
             {
               name: this.$t('link.demo'),
-              url: 'https://owm-widget.netlify.app/demo',
+              url: 'https://weather.elushnikova.dev/demo',
             },
             {
               name: this.$t('link.source'),
@@ -91,7 +91,7 @@ export default Vue.extend({
           links: [
             {
               name: this.$t('link.demo'),
-              url: 'https://hour-rules.netlify.app/',
+              url: 'https://hours.elushnikova.dev/',
             },
             {
               name: this.$t('link.source'),
