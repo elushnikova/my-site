@@ -23,6 +23,8 @@ const en: LocaleType = {
     desc: 'JS developer fond of HTML and CSS. Falling in love with Node.',
     github: 'Publishing code at GitHub.',
     email: 'Reading your emails here.',
+    review: 'Can review your code.',
+    donate: 'Accepting donations here.',
     job: {
       hint: 'Working with the best',
       title: 'Mentoring at Elbrus Bootcamp.',
