@@ -47,6 +47,16 @@ export default Vue.extend({
             name: this.$t('my.email'),
             url: 'mailto:hello@elushnikova.dev',
           },
+          {
+            title: 'calendly.com/elushnikova/code-review',
+            name: this.$t('my.review'),
+            url: 'https://calendly.com/elushnikova/code-review',
+          },
+          {
+            title: 'tinkoff.ru/rm/lushnikova.elena7/0nwvE28442',
+            name: this.$t('my.donate'),
+            url: 'https://www.tinkoff.ru/rm/lushnikova.elena7/0nwvE28442',
+          },
         ],
       },
     };
