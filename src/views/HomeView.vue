@@ -33,9 +33,8 @@ export default Vue.extend({
         desc: this.$t('my.desc'),
         links: [
           {
-            title: this.$t('my.job.hint'),
-            name: this.$t('my.job.title'),
-            url: 'https://elbrusboot.camp/spb-js/',
+            name: this.$t('my.job'),
+            url: 'https://www.linkedin.com/in/elushnikova/',
           },
           {
             title: 'github.com/elushnikova',
@@ -48,14 +47,9 @@ export default Vue.extend({
             url: 'mailto:hello@elushnikova.dev',
           },
           {
-            title: 'calendly.com/elushnikova/code-review',
+            title: 'calendly.com/elushnikova/chat',
             name: this.$t('my.review'),
-            url: 'https://calendly.com/elushnikova/code-review',
-          },
-          {
-            title: 'tinkoff.ru/rm/lushnikova.elena7/0nwvE28442',
-            name: this.$t('my.donate'),
-            url: 'https://www.tinkoff.ru/rm/lushnikova.elena7/0nwvE28442',
+            url: 'https://calendly.com/elushnikova/chat',
           },
         ],
       },
