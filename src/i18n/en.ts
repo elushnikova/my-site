@@ -24,11 +24,7 @@ const en: LocaleType = {
     github: 'Publishing code at GitHub.',
     email: 'Reading your emails here.',
     review: 'Can review your code.',
-    donate: 'Accepting donations here.',
-    job: {
-      hint: 'Working with the best',
-      title: 'Mentoring at Elbrus Bootcamp.',
-    },
+    job: 'Open to work in web development.',
     intro: 'Greetings. I\'m Lena, JS developer. Working at UTC+3 time zone.',
   },
   link: {
