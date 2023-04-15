@@ -38,6 +38,10 @@ const en: LocaleType = {
     landing: 'landing',
   },
   sample: {
+    elevator: {
+      name: 'Elevator · 2023',
+      desc: 'Simplified model of an elevator. Proof of concept for student task and a source of screenshots/casts for task description.',
+    },
     timer: {
       name: 'Timer · 2022',
       desc: 'Countdown timer for lecture breaks',

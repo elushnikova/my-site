@@ -29,6 +29,21 @@ export default Vue.extend({
     return {
       samples: [
         {
+          slug: 'elevator',
+          name: this.$t('sample.elevator.name'),
+          desc: this.$t('sample.elevator.desc'),
+          links: [
+            {
+              name: this.$t('link.demo'),
+              url: 'https://elevator.elushnikova.dev/',
+            },
+            {
+              name: this.$t('link.source'),
+              url: 'https://github.com/elushnikova/elevator',
+            },
+          ],
+        },
+        {
           slug: 'timer',
           name: this.$t('sample.timer.name'),
           desc: this.$t('sample.timer.desc'),
